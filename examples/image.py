@@ -66,7 +66,6 @@ try:
     # Clear the display and put the device to sleep after cycling through images
     logging.info("Clearing display and entering sleep mode.")  # Log the transition to sleep mode
     epd.init()  # Reinitialize the display
-    epd.Clear(0xFF)  # Clear the display
     epd.sleep()  # Put the display into sleep mode
 
 except IOError as e:
