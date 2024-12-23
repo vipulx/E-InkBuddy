@@ -1,3 +1,23 @@
 
  TO copy file from pc to rpi using ssh
 PS C:\WINDOWS\system32> scp "C:\Users\Muskan Mobile\Desktop\1.bmp" siddhart@raspberrypi:~/e-Paper/RaspberryPi_JetsonNano/python/pic/siddhartpic
+
+
+
+----------------------------------------------------
+to add autorun script when poweron
+
+step 1.sudo crontab -e
+if you do it for the first time you are asked to select your text editor :
+
+--> Select an editor.  To change later, run 'select-editor'.
+  1. /bin/nano        <---- easiest
+  2. /usr/bin/vim.tiny
+  3. /bin/ed
+
+
+Step 2. in text file add
+
+@reboot python3 /your/file/scripy.py &
+
+------------------------------------------
